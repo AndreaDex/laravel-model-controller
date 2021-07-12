@@ -23,7 +23,12 @@
             <h3>{{ $movie->title}}</h3>
             <span>{{ $movie->release_date}}</span>
             <div class="desc">
+                <h5>OVERVIEW</h5>
                 <p>{{ $movie->overview}}</p>
+            </div>
+            <div class="cast">
+                <h5>CAST</h5>
+                <p>{{$movie->cast}}</p>
             </div>
 
         </div>
