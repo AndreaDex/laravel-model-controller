@@ -10,6 +10,14 @@
 
 <body>
     <h1>model e controller</h1>
+
+    @foreach ($movies as $movie)
+    <div class="card">
+        <img src="{{$movie->poster}}" alt="{{$movie->title}}">
+        <h3>{{ $movie->title}}</h3>
+    </div>
+
+    @endforeach
 </body>
 
 </html>
