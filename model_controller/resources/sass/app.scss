@@ -1,1 +1,41 @@
-//
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: calc(100% / 4);
+
+        img {
+            width: 300px;
+            height: 350px;
+            object-fit: contain;
+        }
+        h3 {
+            color: #ed1d24;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+        }
+        span {
+            margin: 5px 0;
+        }
+
+        p {
+            line-height: 25px;
+        }
+    }
+}
