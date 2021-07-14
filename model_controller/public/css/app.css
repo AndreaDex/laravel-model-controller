@@ -12,21 +12,16 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .gallery .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  flex-basis: calc(100% / 4);
-}
-
-.gallery .card img {
-  width: 300px;
-  height: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  flex-basis: 300px;
+  border: 1px solid #ed1d24;
+  border-radius: 10px;
 }
 
 .gallery .card h3 {
@@ -42,9 +37,5 @@ body {
 
 .gallery .card p {
   line-height: 25px;
-}
-
-.gallery .card .desc {
-  margin: 10px 0;
 }
 
